@@ -1,18 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Masonry Layout | CSS Grid Project</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template | VanillaJS</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <script src="js/script.js"></script>
-</body>
-
+  <body>
+    <ul>
+      <li class="span3"><h1>Easy</h1></li>
+      <li class="span6"><h1>Horizontal</h1></li>
+      <li class="span3"><h1>Tiles</h1></li>
+      <li class="span5"><h1>CSS Grid</h1></li>
+      <li class="span2">
+        <p>&ldquo;Dead men are heavier than broken hearts.&rdquo;</p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;I needed a drink, I needed a lot of life insurance, I needed a
+          vacation, I needed a home in the country. What I had was a coat, a hat
+          and a gun. I put them on and went out of the room.&rdquo;
+        </p>
+      </li>
+      <li class="span4">
+        <p>
+          &ldquo;There is no bad whiskey. There are only some whiskeys that
+          aren't as good as others.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It seemed like a nice neighborhood to have bad habits
+          in.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It was a blonde. A blonde to make a bishop kick a hole in a
+          stained-glass window.&rdquo;
+        </p>
+      </li>
+      <li class="span2">
+        <p>&ldquo;She gave me a smile I could feel in my hip pocket.&rdquo;</p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;The girl gave him a look which ought to have stuck at least
+          four inches out of his back.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;You talk too damn much and too damn much of it is about
+          you.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;As honest as you can expect a man to be in a world where its
+          going out of style.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          The French have a phrase for it. The bastards have a phrase for
+          everything and they are always right. To say goodbye is to die a
+          little.&rdquo;
+        </p>
+      </li>
+      <li class="span2 height2">
+        <p>
+          &ldquo;I'm an occasional drinker, the kind of guy who goes out for a
+          beer and wakes up in Singapore with a full beard.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;In writing a novel, when in doubt, have two guys come through
+          the door with guns.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;I was neat, clean, shaved and sober and I didn't care who knew
+          it.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;There is no trap so deadly as the trap you set for
+          yourself.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;From 30 feet away she looked like a lot of class. From 10 feet
+          away she looked like something made up to be seen from 30 feet
+          away.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;I was as hollow and empty as the spaces between stars.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It seemed like a nice neighborhood to have bad habits
+          in.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It was a blonde. A blonde to make a bishop kick a hole in a
+          stained-glass window.&rdquo;
+        </p>
+      </li>
+      <li class="span2">
+        <p>&ldquo;She gave me a smile I could feel in my hip pocket.&rdquo;</p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;The girl gave him a look which ought to have stuck at least
+          four inches out of his back.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;There is no trap so deadly as the trap you set for
+          yourself.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;From 30 feet away she looked like a lot of class. From 10 feet
+          away she looked like something made up to be seen from 30 feet
+          away.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;I was as hollow and empty as the spaces between stars.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;You talk too damn much and too damn much of it is about
+          you.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;As honest as you can expect a man to be in a world where its
+          going out of style.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          The French have a phrase for it. The bastards have a phrase for
+          everything and they are always right. To say goodbye is to die a
+          little.&rdquo;
+        </p>
+      </li>
+      <li class="span2 height2">
+        <p>
+          &ldquo;I'm an occasional drinker, the kind of guy who goes out for a
+          beer and wakes up in Singapore with a full beard.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;In writing a novel, when in doubt, have two guys come through
+          the door with guns.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;I was neat, clean, shaved and sober and I didn't care who knew
+          it.&rdquo;
+        </p>
+      </li>
+      <li class="span2">
+        <p>&ldquo;Dead men are heavier than broken hearts.&rdquo;</p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;I needed a drink, I needed a lot of life insurance, I needed a
+          vacation, I needed a home in the country. What I had was a coat, a hat
+          and a gun. I put them on and went out of the room.&rdquo;
+        </p>
+      </li>
+      <li class="span4">
+        <p>
+          &ldquo;There is no bad whiskey. There are only some whiskeys that
+          aren't as good as others.&rdquo;
+        </p>
+      </li>
+      <li class="span2">
+        <p>&ldquo;Dead men are heavier than broken hearts.&rdquo;</p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;I needed a drink, I needed a lot of life insurance, I needed a
+          vacation, I needed a home in the country. What I had was a coat, a hat
+          and a gun. I put them on and went out of the room.&rdquo;
+        </p>
+      </li>
+      <li class="span4">
+        <p>
+          &ldquo;There is no bad whiskey. There are only some whiskeys that
+          aren't as good as others.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It seemed like a nice neighborhood to have bad habits
+          in.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;It was a blonde. A blonde to make a bishop kick a hole in a
+          stained-glass window.&rdquo;
+        </p>
+      </li>
+      <li class="span2">
+        <p>&ldquo;She gave me a smile I could feel in my hip pocket.&rdquo;</p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;The girl gave him a look which ought to have stuck at least
+          four inches out of his back.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;You talk too damn much and too damn much of it is about
+          you.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;As honest as you can expect a man to be in a world where its
+          going out of style.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          The French have a phrase for it. The bastards have a phrase for
+          everything and they are always right. To say goodbye is to die a
+          little.&rdquo;
+        </p>
+      </li>
+      <li class="span2 height2">
+        <p>
+          &ldquo;I'm an occasional drinker, the kind of guy who goes out for a
+          beer and wakes up in Singapore with a full beard.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;In writing a novel, when in doubt, have two guys come through
+          the door with guns.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;I was neat, clean, shaved and sober and I didn't care who knew
+          it.&rdquo;
+        </p>
+      </li>
+      <li class="span3">
+        <p>
+          &ldquo;There is no trap so deadly as the trap you set for
+          yourself.&rdquo;
+        </p>
+      </li>
+      <li class="span3 height2">
+        <p>
+          &ldquo;From 30 feet away she looked like a lot of class. From 10 feet
+          away she looked like something made up to be seen from 30 feet
+          away.&rdquo;
+        </p>
+      </li>
+      <li class="span4">
+        <p>
+          &ldquo;I was as hollow and empty as the spaces between stars.&rdquo;
+        </p>
+      </li>
+      <li class="span2 height4">
+        <p>
+          &ldquo;No one who achieves success does so without the help of others.
+          The wise and confident acknowledge this help with gratitude.&rdquo;
+        </p>
+      </li>
+    </ul>
+    <script src="js/script.js"></script>
+  </body>
 </html>
